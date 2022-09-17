@@ -1,0 +1,124 @@
+{
+  "games": [
+    {
+      "opponent": "Bavarian United SC",
+      "time": "9/18/22 9:00 AM",
+      "location": "Away @ Heartland Value Fund Stadium",
+      "logo": "https://d11602kq9f3hhz.cloudfront.net/academy/458/41357/f0ad506f-e677-40b4-a0bd-5027ebb04d16/41357.png",
+      
+      "address": "700%20W%20Lexington%20Blvd%2C%20Glendale%2C%20WI%2053217",
+      "ctz": "America%2FChicago",
+      "timestamp": "20220918T090000/20220918T110000"
+    },
+    {
+      "opponent": "St. Louis Scott Gallagher",
+      "time": "10/15/22 9:00 AM",
+      "location": "Home @ Waukegan Sports Park Field #1",
+      "logo": "https://d11602kq9f3hhz.cloudfront.net/academy/82/106471/c14491f1-809c-4978-8674-3594f5411b07/106471.jpeg",
+      
+      "address": "3391%20W%20Beach%20Rd%2C%20Waukegan%2C%20IL%2060085",
+      "ctz": "America%2FChicago",
+      "timestamp": "20221015T090000/20221015T110000"
+    },
+    {
+      "opponent": "Real Colorado",
+      "time": "10/16/22 3:00 PM",
+      "location": "Home @ Vernon Hills Athletic Complex Field #12",
+      "logo": "https://d11602kq9f3hhz.cloudfront.net/academy/12/9153/65af5ddf-a026-477b-ae91-2528684fb890/9153.png",
+
+      "address": "62FX%2BWH%2C%20300%20Nike%20Pkwy%2C%20Vernon%20Hills%2C%20IL%2060061",
+      "ctz": "America%2FChicago",
+      "timestamp": "20221016T150000/20221016T170000"
+    },
+    {
+      "opponent": "Sockers FC",
+      "time": "10/22/22 10:00 AM",
+      "location": "Home @ Waukegan Sports Park Field #1",
+      "logo": "https://d11602kq9f3hhz.cloudfront.net/academy/16/26305/f1d699b6-f613-4a11-84f9-f28e42380d81/26305.png",
+
+      "address": "3391%20W%20Beach%20Rd%2C%20Waukegan%2C%20IL%2060085",
+      "ctz": "America%2FChicago",
+      "timestamp": "20221022T100000/20221022T120000"
+    },
+    {
+      "opponent": "SC Wave",
+      "time": "10/23/22 6:00 PM",
+      "location": "Home @ Vernon Hills Athletic Complex Field #12",
+      "logo": "https://d11602kq9f3hhz.cloudfront.net/academy/473/41367/49569dc4-ba95-48c6-91b5-92d02e156c6a/41367.png",
+
+      "address": "62FX%2BWH%2C%20300%20Nike%20Pkwy%2C%20Vernon%20Hills%2C%20IL%2060061",
+      "ctz": "America%2FChicago",
+      "timestamp": "20221023T180000/20221023T200000"
+    },
+    {
+      "opponent": "Minnesota United",
+      "time": "10/29/22 9:00 AM",
+      "location": "Away @ Front Turf East (Field 49) - National Sports Center",
+      "logo": "https://d11602kq9f3hhz.cloudfront.net/academy/191/11318/48f990a5-60fb-4469-95b3-d0abdba34616/11318.png",
+
+      "address": "1700%20105th%20Ave%20NE%2C%20Blaine%2C%20MN%2055449",
+      "ctz": "America%2FChicago",
+      "timestamp": "20221029T090000/20221029T110000"
+    },
+    {
+      "opponent": "Shattuck-Saint Mary's",
+      "time": "10/30/22 3:30 PM",
+      "location": "Away @ Shattuck-St. Mary's School",
+      "logo": "https://d11602kq9f3hhz.cloudfront.net/academy/81/15985/9202c1bc-f3f7-4a06-a05f-7fc0192224f4/15985.png",
+
+      "address": "1000%20Shumway%20Ave%2C%20Faribault%2C%20MN%2055021",
+      "ctz": "America%2FChicago",
+      "timestamp": "20221030T153000/20221030T173000"
+    },
+    {
+      "opponent": "Louisiana TDP Elite",
+      "time": "11/5/22 12:00 PM",
+      "location": "Away @ Field 4 - Broussard Sports",
+      "logo": "https://d11602kq9f3hhz.cloudfront.net/academy/469/41453/c15c68de-aef2-444a-a581-3258b5f0c65f/41453.png",
+
+      "address": "701%20St%20Nazaire%20Rd%2C%20Broussard%2C%20LA%2070518",
+      "ctz": "America%2FChicago",
+      "timestamp": "20221105T120000/20221105T140000"
+    },
+    {
+      "opponent": "SC Wave",
+      "time": "11/12/22 9:00 AM",
+      "location": "Away @ Franklin Field",
+      "logo": "https://d11602kq9f3hhz.cloudfront.net/academy/473/41367/49569dc4-ba95-48c6-91b5-92d02e156c6a/41367.png",
+
+      "address": "7035%20S%20Ballpark%20Dr%2C%20Franklin%2C%20WI%2053132",
+      "ctz": "America%2FChicago",
+      "timestamp": "20221112T090000/20221112T110000"
+    },
+    {
+      "opponent": "Columbus Crew",
+      "time": "11/13/22 9:00 AM",
+      "location": "Home @ Waukegan Sports Park Field #1",
+      "logo": "https://d11602kq9f3hhz.cloudfront.net/academy/58/40667/cea7944c-270e-41de-81e1-8f39c659388a/40667.png",
+
+      "address": "3391%20W%20Beach%20Rd%2C%20Waukegan%2C%20IL%2060085",
+      "ctz": "America%2FChicago",
+      "timestamp": "20221113T090000/20221113T110000"
+    },
+    {
+      "opponent": "Midwest United",
+      "time": "11/19/22 10:00 AM",
+      "location": "Away @ South Field - Midwest United FC Complex",
+      "logo": "https://d11602kq9f3hhz.cloudfront.net/academy/368/15360/eaeec116-2a37-4c78-b2c2-28795f9fbd84/15360.png",
+
+      "address": "3351%2036th%20St%20SE%2C%20Grand%20Rapids%2C%20MI%2049512",
+      "ctz": "America%2FNew_York",
+      "timestamp": "20221119T100000/20221119T120000"
+    },
+    {
+      "opponent": "Bavarian United SC",
+      "time": "11/20/22 2:00 PM",
+      "location": "Home @ Field #12 (Turf) - Vernon Hills Athletic Complex",
+      "logo": "https://d11602kq9f3hhz.cloudfront.net/academy/458/41357/f0ad506f-e677-40b4-a0bd-5027ebb04d16/41357.png",
+
+      "address": "62FX%2BWH%2C%20300%20Nike%20Pkwy%2C%20Vernon%20Hills%2C%20IL%2060061",
+      "ctz": "America%2FChicago",
+      "timestamp": "20221120T140000/20221120T160000"
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+* {
+  font-family: Quicksand, Arial;
+  font-size: 16px;
+}
+
+body {
+  margin: 0px;
+}
+
+.body-container {
+  display: flex;
+
+  padding-top: 120px;
+  padding-bottom: 180px;
+  padding-left: 200px;
+  padding-right: 20%;
+
+  margin-left: 5rem;
+}
+
+.bio-highlights-container {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 120px;
+  padding-bottom: 180px;
+  padding-left: 200px;
+  padding-right: 15px;
+
+  margin-left: 5rem;
+  margin-right: 20%;
+}
+
+.bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 200px; /* <-- clamp */
+
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.bio-and-coach-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+  padding: 15px;
+}
+
+.bio-text {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.coach-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-hr {
+  border-top: 3px solid #bbb;
+  width: 100%;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.highlight-title {
+  font-weight: bold;
+  font-size: 2rem;
+
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.highlight-videos {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+  gap: 1rem;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0px;
+
+  padding: 20px;
+
+  background-color: rgb(245, 245, 245);
+
+  flex: 1;
+
+  border-radius: 15px;
+
+  border-style: solid;
+  border-color: rgb(199, 199, 199);
+  border-width: 1px;
+}
+
+iframe {
+  display: block;
+  aspect-ratio: 16/9;
+
+  width: 100%;
+}
+
+.video-title {
+  font-weight: bold;
+
+  margin-top: 10px;
+}
+
+.schedule-download-container {
+  position: fixed;
+  background-color: rgb(245, 245, 245);
+  
+  right: 0px;
+  left: 80%;
+  top: 74px;
+  bottom: 129px;
+
+  display: flexbox;
+  flex-direction: column;
+}
+
+.schedule-container {
+  height: 85%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(240, 240, 240);
+
+  height: 15%;
+
+  border-style: solid;
+  border-color: rgb(199, 199, 199);
+  border-width: 1px;
+}
+
+.schedule-list {
+  border-style: solid;
+  border-color: rgb(199, 199, 199);
+  border-width: 1px;
+
+  height: 85%;
+  
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+
+  padding: 10px;
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: white;
+  
+  padding: 10px;
+
+  border-style: solid;
+  border-color: rgb(199, 199, 199);
+  border-width: 1px;
+  border-radius: 15px;
+
+  height: 75px;
+
+  margin-bottom: 10px;
+}
+
+.game-details {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.opponent-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  
+  margin-bottom: 5px;
+
+  text-align: center;
+}
+
+.game-location {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.game-time {
+  font-size: 0.8rem;
+}
+
+.download-button {
+  height: 15%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(240, 240, 240);
+
+  font-size: 1.2rem;
+
+  transition: background-color 0.2s;
+  
+  border-style: solid;
+  border-color: rgb(199, 199, 199);
+  border-width: 1px;
+}
+
+.download-button:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.download-button:active {
+  background-color: rgb(220, 220, 220);
+}

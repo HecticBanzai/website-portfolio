@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PSA Sensitivity Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="psasensitivity.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="overlay">
+      <div id="modal">
+        <p id="new-sens"></p>
+        <button id="close-modal">Try another Sensitivity?</button>
+      </div>
+    </div>
+
+    <div class="container">
+      PSA Calculator
+    </div>
+
+    <div class="body-container">
+      <div class="left-side">
+        <div class="introduction">
+          <p class="title">What is the PSA Method?</p>
+          <p class="text">
+            <b>PSA</b> stands for <b>Perfect Sensitivity Approximation.</b> The idea behind it is that one should have a sensitivity that is perfect for them and it should not require any time getting used to it.
+          </p>
+          <p class="text">
+            How it works is by starting with a base in-game sensitivity. Lets say 1 for example. The calculator will multiply the value by 0.5 and 1.5, resulting in a lower and higher sensitivity respectively.
+          </p>
+          <p class="text">
+            Picking the higher sensitivity results in the calculator taking the average between the higher and the base sensitivities and making that the new base sensitivity. In this example, the new base sensitivity becomes 1.25. This value is also multiplied by 0.5 and 1.5.
+          </p>
+          <p class="text">
+            Picking the lower sensitivity does the exact same but it takes the average between the lower and the base sensitivities. In this example the new base sensitivity will be 0.75.
+          </p>
+          <p class="text">
+            As you go on, the lower and higher multipliers go from 0.6 and 1.4, 0.7 and 1.3, 0.8 and 1.2, and so on until they are both equal to 1. That is when your perfect sensitivity is found.
+          </p>
+        </div>
+    
+        <div class="how-to-use">
+          <p class="title">How To Use The Calculator</p>
+          <p class="text">
+            Adjust your in-game sensitivity so that going from one edge of your mousepad to the other makes your character does a 360 degree turn and enter that sensitivity below.
+          </p>
+          <p class="text">
+            The calculator will produce a higher and lower sensitivity. Try out both sensitivities for around 5-8 minutes and select the one that feels the most comfortable.
+          </p>
+          <p class="text">
+            Continue this process until the calculator gives you your final sensitivity. Keep in mind this process will take a while (at least 40 minutes).
+          </p>
+        </div>
+    
+        <div class="enter-sensitivity">
+          <p class="title">Enter Your Base Sensitivity</p>
+
+          <div class="input-container">
+            <input id="base-sens" type="text" placeholder="">
+            <button id="confirm-base-sens">
+              Lets go!
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="right-container">
+          <div class="select">
+            <p id="prompt" class="title">Which one felt better?</p>
+            <button id="lower">
+              Lower
+            </button>
+            <button  id="higher">
+              Higher
+          </div>
+          </button>
+          <table id="sens-table">
+            <tr class="labels">
+              <td>Lower</td>
+              <td id="start">Base</td>
+              <td>Higher</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>

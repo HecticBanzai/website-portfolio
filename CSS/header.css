@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgb(221, 221, 221);
+
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+
+  padding: 15px 15px;
+
+  margin-left: 5rem;
+}
+
+.filler-container,
+.name {
+  width: 100px;
+}
+
+.button-container {
+  text-align: left;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.name {
+  font-size: 20px;
+  text-align: right;
+}

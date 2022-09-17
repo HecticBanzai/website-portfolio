@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./CSS/header.css">
+  <link rel="stylesheet" href="./CSS/Pages/soccer.css">
+  <link rel="stylesheet" href="./CSS/footer.css">
+  <link rel="stylesheet" href="./CSS/sidebar.css">
+  <link rel="stylesheet" href="./CSS/tooltip.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Larry Ling | Soccer</title>
+</head>
+<body>
+  <div class="header">
+    <div class="filler-container"></div>
+    <div class="title">
+      Soccer
+    </div>
+    <div class="name">
+      Larry Ling
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li class="arrow">
+        <span style="color: white;">
+          <a href="#" class="nav-link"> 
+            <span class="link-text">Menu</span>
+            <i class="fa-solid fa-angles-right" id="nav-button"></i>
+          </a>
+        </span>
+      </li>
+      <li class="nav-item">
+        <span style="color: white;">
+          <a href="index.html" class="nav-link">
+            <i class="fa-solid fa-house-chimney" id="nav-button"></i>
+            <span class="link-text">Home</span>
+          </a>
+        </span>
+      </li>
+      <li class="nav-item">
+        <span style="color: white;">
+          <a href="violin.html" class="nav-link">
+            <i class="fa-solid fa-music" id="nav-button"></i>
+            <span class="link-text">Violin</span>
+          </a>
+        </span>
+      </li>
+      <li class="nav-item">
+        <span style="color: white;">
+          <a href="soccer.html" class="nav-link">
+            <i class="fa-solid fa-futbol" id="nav-button"></i>
+            <span class="link-text">Soccer</span>
+          </a>
+        </span>
+      </li>
+      <li class="nav-item">
+        <span style="color: white;">
+          <a href="programming.html" class="nav-link">
+            <i class="fa-solid fa-computer" id="nav-button"></i>
+            <span class="link-text">Programming</span>
+          </a>
+        </span>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="bio-highlights-container">
+    <div class="bio">
+      <div class="images">
+        <!-- <img class="image" src="Images/Index/picture.jpg"> -->
+        <div style="background-image: url('https://d11602kq9f3hhz.cloudfront.net/academy/83/10693/4ee3bba2-86c5-4da3-a34b-af233be0cdbb/10693.png'); background-size: contain; background-repeat: no-repeat; background-position: center; margin: 0 0 0 0; width: 150px; height: 150px;"></div>
+      </div>
+      <div class="bio-and-coach-contacts">
+        <div class="bio-text">
+          I play for Chicago FC United's MLS Next Academy at the under-18/19s age group. I have been with the club for almost 5 years starting
+          from the club's USSDA (US Soccer Development Academy) days. I am primarily left footed and the positions I play are either left fullback or left centerback.
+          On this page, you can find my fall season schedule, player resume, current coach contacts, and highlight videos.
+        </div>
+        <div class="coach-contacts">
+          <span style="font-weight: bold; font-size: 1.2rem;">Coaches</span>
+          <span>Oscar Rivero: oscar.r@chicagofcunited.com</span>
+          <span>Kevin Gowrie: kevin.g@chicagofcunited.com</span>
+        </div>
+      </div>
+      
+    </div>
+
+    <hr class="container-hr">
+
+    <div class="highlight-title">
+      Highlight Videos
+    </div>
+
+    <div class="highlight-videos">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/-JJKBYlHqck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-title">
+          Larry Ling - u17 Highlights
+        </div>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/ou-ZPowhjdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-title">
+          Larry Ling - U18/19 Highlights
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  <div class="schedule-download-container">
+    <div class="schedule-container">
+      <div class="schedule-title">
+        Upcoming Games
+        <span style="text-align: center; font-size: 12px; font-weight: normal">(Click on a game to add to your Google Calendar)</span>
+      </div>
+      <div class="schedule-list" id="list"></div>
+    </div>
+    <a href="/Downloadables/Larry Ling - Soccer Resume.pdf" download>
+      <div class="download-button">
+        Download Player Resume
+      </div>
+    </a>
+  </div>
+
+  <div class="footer">
+    <div class="email-phone-container">
+      <div class="email-phone-text">
+        Contact me
+      </div>
+
+      <hr class="solid">
+
+      <div class="email">
+        <div class="address">
+          Email: larryling.main@gmail.com
+        </div>
+        <div class="copy" id="copy-email" onclick="copy_email()" data-tooltip="Copy to clipboard">
+          <img class="copy-icon" src="./Images/Footer/copy.png">
+        </div>
+      </div>
+      <div class="phone">
+        <div class="number">
+          Phone: 312-799-0681
+        </div>
+        <div class="copy" id="copy-number" onclick="copy_number()" data-tooltip="Copy to clipboard">
+          <img class="copy-icon" src="./Images/Footer/copy.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="social-container">
+      <div class="contact-text">
+        Keep in touch
+      </div>
+
+      <hr class="solid">
+
+      <div class="contact-icons">
+        <a href="https://www.instagram.com/larryling.04/" target="_blank" rel="noopener noreferrer">
+          <div class="icon-container" id="instagram" data-tooltip="Instagram">
+            <img class="icon-image" src="./Images/Footer/instagram-icon.png">
+          </div>
+        </a>
+        <a href="https://github.com/HecticBanzai" target="_blank" rel="noopener noreferrer"> 
+          <div class="icon-container" id="github" data-tooltip="Github">
+            <img class="icon-image" src="./Images/Footer/github.png">
+          </div>
+        </a>
+        <a target="_blank" rel="noopener noreferrer">
+          <div class="icon-container" id="linkedin" data-tooltip="Linkedin (not available)">
+            <img class="icon-image" src="./Images/Footer/linkedin-icon.png">
+          </div>
+        </a>
+        <a href="https://www.youtube.com/channel/UCxB8Z8p8A0c_KLURVN55PNg" target="_blank" rel="noopener noreferrer">
+          <div class="icon-container" id="youtube" data-tooltip="Youtube">
+            <img class="icon-image" src="./Images/Footer/youtube-icon.png">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy-alert" id="popup">
+    Copied!
+  </div>
+  
+  <script src="./JS/tooltip.js"></script>
+  <script src="./JS/copy.js"></script>
+  <script src="./JS/games.js"></script>
+  <script src="https://kit.fontawesome.com/200b2131cf.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

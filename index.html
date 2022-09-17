@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./CSS/header.css">
+  <link rel="stylesheet" href="./CSS/Pages/index.css">
+  <link rel="stylesheet" href="./CSS/footer.css">
+  <link rel="stylesheet" href="./CSS/sidebar.css">
+  <link rel="stylesheet" href="./CSS/tooltip.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Larry Ling | Home</title>
+</head>
+<body>
+  <div class="header">
+    <div class="filler-container"></div>
+    <div class="title">
+      Home
+    </div>
+    <div class="name">
+      Larry Ling
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li class="arrow">
+        <span style="color: white;">
+          <a href="#" class="nav-link"> 
+            <span class="link-text">Menu</span>
+            <i class="fa-solid fa-angles-right" id="nav-button"></i>
+          </a>
+        </span>
+      </li>
+      <li class="nav-item">
+        <span style="color: white;">
+          <a href="index.html" class="nav-link">
+            <i class="fa-solid fa-house-chimney" id="nav-button"></i>
+            <span class="link-text">Home</span>
+          </a>
+        </span>
+      </li>
+      <li class="nav-item">
+        <span style="color: white;">
+          <a href="violin.html" class="nav-link">
+            <i class="fa-solid fa-music" id="nav-button"></i>
+            <span class="link-text">Violin</span>
+          </a>
+        </span>
+      </li>
+      <li class="nav-item">
+        <span style="color: white;">
+          <a href="soccer.html" class="nav-link">
+            <i class="fa-solid fa-futbol" id="nav-button"></i>
+            <span class="link-text">Soccer</span>
+          </a>
+        </span>
+      </li>
+      <li class="nav-item">
+        <span style="color: white;">
+          <a href="programming.html" class="nav-link">
+            <i class="fa-solid fa-computer" id="nav-button"></i>
+            <span class="link-text">Programming</span>
+          </a>
+        </span>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="body-container">
+
+    <div class="image-intro">
+      <img class="image" src="./Images/Index/picture.jpg">
+      <div class="intro">
+        <h1>
+          Hello there!
+        </h1>
+        <div class="intro-text">
+          My name is Larry and welcome to my e-portfolio! I am currently senior at Whitney M. Young Magnet High School. 
+          I am also a violin, soccer, and computer enthusiast. Through this website, I hope to give you an insight in who I am as well as the hobbies that I partake in.
+          Below, you can connect with me through email, phone, and other social medias.
+        </div>
+      </div>
+    </div>
+
+    <div class="purpose">
+      <h1>
+        Why was this website made?
+      </h1>
+
+      <div class="purpose-text">
+        As someone who is passionate about software development, I decided to learn front-end development (HTML, CSS, Javascript) during the summer of 2022. 
+        The more I learn about front-end development, the more this website will evolve. The evolution of this website will be tracked on my Github.
+      </div>
+    </div>
+
+    <div class="future">
+      <h1>
+        The future of this website
+      </h1>
+
+      <div class="future-text">
+        3D graphics have always been an interest of mine. In the future, I plan to gain enough experience in 3D modelling (via Blender) and ThreeJS
+        so that I can update this website to make it more visually appealing and interactive for visiters.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="email-phone-container">
+      <div class="email-phone-text">
+        Contact me
+      </div>
+
+      <hr class="solid">
+
+      <div class="email">
+        <div class="address">
+          Email: larryling.main@gmail.com
+        </div>
+        <div class="copy" id="copy-email" onclick="copy_email()" data-tooltip="Copy to clipboard">
+          <img class="copy-icon" src="./Images/Footer/copy.png">
+        </div>
+      </div>
+      <div class="phone">
+        <div class="number">
+          Phone: 312-799-0681
+        </div>
+        <div class="copy" id="copy-number" onclick="copy_number()" data-tooltip="Copy to clipboard">
+          <img class="copy-icon" src="./Images/Footer/copy.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="social-container">
+      <div class="contact-text">
+        Keep in touch
+      </div>
+
+      <hr class="solid">
+
+      <div class="contact-icons">
+        <a href="https://www.instagram.com/larryling.04/" target="_blank" rel="noopener noreferrer">
+          <div class="icon-container" id="instagram" data-tooltip="Instagram">
+            <img class="icon-image" src="./Images/Footer/instagram-icon.png">
+          </div>
+        </a>
+        <a href="https://github.com/HecticBanzai" target="_blank" rel="noopener noreferrer"> 
+          <div class="icon-container" id="github" data-tooltip="Github">
+            <img class="icon-image" src="./Images/Footer/github.png">
+          </div>
+        </a>
+        <a target="_blank" rel="noopener noreferrer">
+          <div class="icon-container" id="linkedin" data-tooltip="Linkedin (not available)">
+            <img class="icon-image" src="./Images/Footer/linkedin-icon.png">
+          </div>
+        </a>
+        <a href="https://www.youtube.com/channel/UCxB8Z8p8A0c_KLURVN55PNg" target="_blank" rel="noopener noreferrer">
+          <div class="icon-container" id="youtube" data-tooltip="Youtube">
+            <img class="icon-image" src="./Images/Footer/youtube-icon.png">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy-alert" id="popup">
+    Copied!
+  </div>
+
+  <script src="./JS/tooltip.js"></script>
+  <script src="./JS/copy.js"></script>
+  <script src="https://kit.fontawesome.com/200b2131cf.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

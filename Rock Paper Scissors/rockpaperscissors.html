@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rock Paper Scissors</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="rockpaperscissors.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <p class="gamename">
+        Rock Paper Scissors
+      </p>
+    </div>
+
+    <div class="scoreboard">
+      <div id="user-label" class="badge">user</div>
+      <div id="cpu-label" class="badge">cpu</div>
+      <span id="user-score">0</span>:<span id="cpu-score">0</span>
+    </div>
+
+    <div class="result">
+      Bring it on...
+    </div>
+
+    <div class="choices">
+      <div id="rock" class="choice">
+        <img class="picture" src="images/rock.png">
+      </div>
+      <div id="paper" class="choice">
+        <img class="picture" src="images/paper.png">
+      </div>
+      <div id="scissors" class="choice">
+        <img class="picture" src="images/scissors.png">
+      </div>
+    </div>
+
+    <p id="action-message">Make your move.</p>
+
+    <script src="app.js"></script>
+  </body>
+</html>
