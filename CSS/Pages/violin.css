@@ -12,14 +12,16 @@ body {
 
   grid-template-columns: 1fr;
 
-  row-gap: 1.5rem;
+  row-gap: 10px;
 
-  padding-top: 120px;
-  padding-bottom: 180px;
-  padding-left: 200px;
-  padding-right: 200px;  
+  margin-left: 2.5rem;
+  margin-top: 70px;
+  margin-bottom: 104px;
 
-  margin-left: 5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .card-left, .card-right {
@@ -31,58 +33,49 @@ body {
 
   width: 100%;
 
-  border-radius: 15px;
-
   border-style: solid;
   border-color: rgb(199, 199, 199);
   border-width: 1px;
   border-radius: 12px;
 
   overflow: hidden;
+
+  text-align: center;
 }
 
 .card-left {
-  text-align: right;
+  flex-direction: column-reverse;
 }
 
 .card-right {
-  text-align: left;
+  flex-direction: column;
 }
 
 .video-container {
-  margin: 0px;
-
   padding: 20px;
-
-  background-color: rgb(245, 245, 245);
-
-  flex: 1;
-
-  border-radius: 12px;
-
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .text-container {
   flex: 2;
 
-  padding: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .piece-title {
   font-weight: bold;
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
 }
 
 .ensemble {
   font-weight: bold;
-  font-size: 1.1rem;
-  margin-bottom: 10px;
+  font-size: 0.8rem;
 }
 
 .description {
-  font-size: 0.85rem;
+  display: none;
 }
 
 iframe {
@@ -90,4 +83,162 @@ iframe {
   aspect-ratio: 16/9;
 
   width: 100%;
+
+  border-radius: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .body-container {
+    display: grid;
+    justify-content: center;
+  
+    grid-template-columns: 60vw;
+  
+    row-gap: 1rem;
+  
+    margin-left: 5rem;
+    margin-top: 70px;
+    margin-bottom: 125px;
+
+    padding: 1rem;
+  }
+  
+  .card-left, .card-right {
+    background-color: rgb(235, 235, 235);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 100%;
+
+  
+    border-style: solid;
+    border-color: rgb(199, 199, 199);
+    border-width: 1px;
+    border-radius: 12px;
+  
+    overflow: hidden;
+  
+    text-align: center;
+  }
+  
+  .card-left {
+    flex-direction: column-reverse;
+  }
+  
+  .card-right {
+    flex-direction: column;
+  }
+  
+  .video-container {
+    padding: 10px;
+  }
+  
+  .text-container {
+    flex: 2;
+  
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .piece-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .ensemble {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 0.85rem;
+  }
+  
+  iframe {
+    display: block;
+    aspect-ratio: 16/9;
+  
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .body-container {
+    display: grid;
+    justify-content: center;
+  
+    grid-template-columns: 80vw;
+  
+    row-gap: 1rem;
+  
+    margin-left: 5rem;
+    margin-top: 70px;
+    margin-bottom: 125px;
+
+    padding: 1rem;
+  }
+
+  .card-left, .card-right {
+    background-color: rgb(235, 235, 235);
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    border-style: solid;
+    border-color: rgb(199, 199, 199);
+    border-width: 1px;
+    border-radius: 12px;
+  
+    overflow: hidden;
+  
+    text-align: center;
+  }
+  .card-left {
+    text-align: right;
+  }
+  
+  .card-right {
+    text-align: left;
+  }
+
+  .video-container {
+    padding-left: 20px;
+  }
+
+  .text-container {
+    flex: 2;
+  
+    padding: 20px;
+  }
+
+  .piece-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .ensemble {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    display: block;
+    font-size: 1rem;
+  }
+
+  iframe {
+    display: block;
+    aspect-ratio: 16/9;
+  
+    height: 15vw;
+  }
 }

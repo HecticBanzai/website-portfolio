@@ -5,38 +5,30 @@
 
 body {
   margin: 0px;
+  height: 100%;
 }
 
 .body-container {
   display: flex;
-
-  padding-top: 120px;
-  padding-bottom: 180px;
-  padding-left: 200px;
-  padding-right: 20%;
-
-  margin-left: 5rem;
-}
-
-.bio-highlights-container {
-  flex: 1;
-
-  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  padding-top: 120px;
-  padding-bottom: 180px;
-  padding-left: 200px;
-  padding-right: 15px;
+  margin-left: 2.5rem;
+  margin-top: 70px;
+  margin-bottom: 104px;
 
-  margin-left: 5rem;
-  margin-right: 20%;
+  padding: 1rem;
+
+  height: 100%;
 }
 
 .bio {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: 100%;
 }
 
 .images {
@@ -46,12 +38,23 @@ body {
   align-items: center;
 }
 
+/*   
 .image {
-  width: 200px; /* <-- clamp */
+  width: 200px;
 
   margin-left: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
+} */
+
+.fc-united {
+  background-image: url('https://d11602kq9f3hhz.cloudfront.net/academy/83/10693/4ee3bba2-86c5-4da3-a34b-af233be0cdbb/10693.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 0 0 0;
+  width: 120px;
+  height: 120px;
 }
 
 .bio-and-coach-contacts {
@@ -59,13 +62,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  
-  padding: 15px;
+
+  padding-bottom: 15px;
 }
 
 .bio-text {
+  margin-right: 15px;
   margin-bottom: 15px;
-  font-size: 1.2rem;
+
+  font-size: 0.8rem;
 }
 
 .coach-contacts {
@@ -81,6 +86,17 @@ body {
   margin-bottom: 10px;
 }
 
+.highlight-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  margin-bottom: 40px;
+}
+
 .highlight-title {
   font-weight: bold;
   font-size: 2rem;
@@ -94,7 +110,11 @@ body {
 .highlight-videos {
   display: grid;
 
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  width: 80%;
+
+  justify-content: center;
+
+  grid-template-columns: repeat(auto-fit, 100%);
 
   gap: 1rem;
 }
@@ -110,8 +130,6 @@ body {
   padding: 20px;
 
   background-color: rgb(245, 245, 245);
-
-  flex: 1;
 
   border-radius: 15px;
 
@@ -133,24 +151,8 @@ iframe {
   margin-top: 10px;
 }
 
-.schedule-download-container {
-  position: fixed;
-  background-color: rgb(245, 245, 245);
-  
-  right: 0px;
-  left: 80%;
-  top: 74px;
-  bottom: 129px;
-
-  display: flexbox;
-  flex-direction: column;
-}
-
 .schedule-container {
-  height: 85%;
-
-  display: flex;
-  flex-direction: column;
+  display: none;
 }
 
 .schedule-title {
@@ -231,8 +233,6 @@ iframe {
 }
 
 .download-button {
-  height: 15%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,6 +246,14 @@ iframe {
   border-style: solid;
   border-color: rgb(199, 199, 199);
   border-width: 1px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  position: fixed;
+  bottom: 104px;
+  left: 2.5rem;
+  right: 0px;
 }
 
 .download-button:hover {
@@ -254,4 +262,182 @@ iframe {
 
 .download-button:active {
   background-color: rgb(220, 220, 220);
+}
+
+@media only screen and (min-width: 768px) {
+  .body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    margin-left: 5rem;
+    margin-top: 70px;
+    margin-bottom: 125px;
+  
+    padding: 1rem;
+  }
+  
+  .bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bio-and-coach-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .bio-text {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .coach-contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container-hr {
+    border-top: 3px solid #bbb;
+    width: 100%;
+  
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .highlight-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+  }
+  
+  .highlight-title {
+    font-weight: bold;
+    font-size: 2rem;
+  
+    margin-top: 10px;
+    margin-bottom: 20px;
+  
+    text-align: center;
+  }
+  
+  .highlight-videos {
+    display: grid;
+
+    width: 80%;
+
+    justify-content: center;
+  
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  
+    gap: 1rem;
+  }
+
+  .download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: rgb(240, 240, 240);
+  
+    font-size: 1.2rem;
+  
+    transition: background-color 0.2s;
+    
+    border-style: solid;
+    border-color: rgb(199, 199, 199);
+    border-width: 1px;
+  
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+    position: fixed;
+    bottom: 125px;
+    left: 5rem;
+    right: 0px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    margin-left: 5rem;
+    margin-right: 20%;
+    margin-top: 70px;
+    margin-bottom: 125px;
+  
+    padding: 1rem;
+  }
+  .fc-united {
+    background-image: url('https://d11602kq9f3hhz.cloudfront.net/academy/83/10693/4ee3bba2-86c5-4da3-a34b-af233be0cdbb/10693.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 0 0 0;
+    width: 150px;
+    height: 150px;
+  }
+  
+
+  .schedule-container {
+    position: fixed;
+    background-color: rgb(245, 245, 245);
+    
+    right: 0px;
+    left: 80%;
+    top: 70px;
+    bottom: 125px;
+  
+    display: flex;
+    flex-direction: column;
+  }
+
+  .download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: rgb(240, 240, 240);
+  
+    font-size: 1.2rem;
+  
+    transition: background-color 0.2s;
+    
+    border-style: solid;
+    border-color: rgb(199, 199, 199);
+    border-width: 1px;
+  
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+    position: fixed;
+    bottom: 125px;
+    left: 5rem;
+    right: 20%;
+  }
 }

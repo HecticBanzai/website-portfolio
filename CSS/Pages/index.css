@@ -3,44 +3,98 @@
   font-size: 16px;
 }
 
-@media only screen and (min_width: 768px) {
-  
+body {
+  margin: 0px;
 }
 
-@media only screen and (min_width: 1080px) {
-  body {
-    margin: 0px;
-  }
+.body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 
+  margin-left: 2.5rem;
+  margin-top: 70px;
+  margin-bottom: 104px;
+
+  padding-top: 1rem;
+}
+
+.image-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  object-fit: cover;
+  width: 40%;
+  height: 40%;
+}
+
+.intro {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.intro-text {
+  margin-left: 20px;
+}
+
+.purpose, .future {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: flex-start;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.purpose-text, .future-text {
+  margin-left: 20px;
+}
+
+@media only screen and (min-width: 768px) {
   .body-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   
-    padding-top: 120px;
-    padding-bottom: 180px;
-    padding-left: 200px;
-    padding-right: 200px;  
-  
     margin-left: 5rem;
+    margin-top: 70px;
+    margin-bottom: 125px;
+
+    padding-left: 7vw;
+    padding-right: 7vw;
   }
   
   .image-intro {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: top;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
   }
   
   .image {
     object-fit: cover;
-    width: 75%;
-    height: 75%;
+    width: 30%;
+    height: 30%;
   }
   
   .intro {
     margin-left: 20px;
-    margin-right: 20px;
   }
   
   .intro-text {
@@ -53,13 +107,10 @@
     justify-content: top;
     align-items: flex-start;
   
-    padding-left: 10px;
-    padding-right: 10px;
-  
-    margin-top: 20px;
-  }
-  
-  .purpose-text, .future-text {
     margin-left: 20px;
+    margin-right: 20px;
+  
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
