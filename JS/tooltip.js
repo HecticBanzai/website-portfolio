@@ -1,5 +1,0 @@
-
-
-function show_tooltip() {
-  
-}
